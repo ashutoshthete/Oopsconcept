@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3</TargetFramework>
+    <StartupObject>Oopsconcept.Employee</StartupObject>
+  </PropertyGroup>
+
+</Project>
