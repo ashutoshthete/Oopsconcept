@@ -53,9 +53,7 @@ namespace Oopsconcept
             {
                 Console.WriteLine("the number is not Disarium");
             }
-           
-            
-           
+ 
         }
     }
 }
