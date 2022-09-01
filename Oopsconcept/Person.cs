@@ -58,7 +58,7 @@ namespace Oopsconcept
     {
         static void Main(string[] args)
         {
-            Person p = new Person(255, "ashutosh thete", new Vehicle(0579, "honda"));
+            Person p = new Person(255, "ashutosh thete", new Vehicle(2579, "honda"));
             Person p2 = new Person(266, "Vijay singh", new Vehicle(2557, "TVS"));
             Console.WriteLine("Person id : "+p.Id+"\nPerson Name : "+p.Name+"\nVehicle id : "+p.V.Vid+"\nVehicle Name : "+p.V.Vname);
             Console.WriteLine("\n");
