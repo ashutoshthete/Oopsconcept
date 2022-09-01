@@ -8,7 +8,7 @@ namespace Oopsconcept
     {
         static void Main(string[] args)
         {
-            int dno, dkno, r;
+            int dno, dkno;
             int c = 0;
             Console.WriteLine();
             for (dkno = 1; dkno <= 100; dkno++)

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3</TargetFramework>
-    <StartupObject>Oopsconcept.Testperson</StartupObject>
+    <StartupObject>Oopsconcept.TestOrder</StartupObject>
   </PropertyGroup>
 
 </Project>

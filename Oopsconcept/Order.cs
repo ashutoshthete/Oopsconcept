@@ -6,10 +6,10 @@ namespace Oopsconcept
 {
     class Order
     {
-        public int orderid;
-        public string orderdate;
-        public Customer cust;
-        public Item item;
+         int orderid;
+         string orderdate;
+         Customer cust;
+         Item item;
 
         public Order(int orderid, string orderdate, Customer cust, Item item)
         {
@@ -18,20 +18,57 @@ namespace Oopsconcept
             this.cust = cust;
             this.item = item;
         }
+        public int Orderid
+        {
+            set { orderid = value; }
+            get { return orderid; }
+        }
+        public string Orderdate
+        {
+            set { orderdate = value; }
+            get { return orderdate; }
+        }
+        public Customer Cust
+        {
+            set { cust = value; }
+            get { return cust; }
+        }
+        public Item Item1
+        {
+            set { item = value; }
+            get { return item; }
+        }
+
 
 
     }
     class Customer
     {
-        public int custid;
-        public string custname;
-        public Address address;
-        public Customer(int custid,string custname,Address address)
+         int custid;
+         string custname;
+         Address address;
+         public Customer(int custid,string custname,Address address)
         {
             this.custid = custid;
             this.custname = custname;
             this.address = address;
         }
+        public int Custid
+        {
+            set { custid = value; }
+            get { return custid; }
+        }
+        public string Custname
+        {
+            set { custname = value; }
+            get { return custname; }
+        }
+        public Address Address1
+        {
+            set { address = value; }
+            get { return address; }
+        }
+
 
     }
     class Address
@@ -97,9 +134,9 @@ namespace Oopsconcept
         {
             Order or = new Order(4521, "12/02/22", new Customer(245, "Ashu", new Address("Kannad","Sambhajinagr",431103)), new Item(255,"Modak",255));
             
-            Console.WriteLine("Order Id : "+or.orderid+"\nOrder Date : "+or.orderdate+"\nCustomer Id : "+or.cust.custid+"\nCustomer Name : "+or.cust.custname
-                +"\nCustomer address : "+or.cust.address.Addr1+"\nCustomer City : "+or.cust.address.City+"\nCustomer Pincode : "+or.cust.address.Pincode
-                +"\nItem Id : "+or.item.Itemid+"\nItem Name : "+or.item.Itemname+"\nItem Price : "+or.item.Itemprice);
+            Console.WriteLine("Order Id : "+or.Orderid+"\nOrder Date : "+or.Orderdate+"\nCustomer Id : "+or.Cust.Custid+"\nCustomer Name : "+or.Cust.Custname
+                +"\nCustomer address : "+or.Cust.Address1.Addr1+"\nCustomer City : "+or.Cust.Address1.City+"\nCustomer Pincode : "+or.Cust.Address1.Pincode
+                +"\nItem Id : "+or.Item1.Itemid+"\nItem Name : "+or.Item1.Itemname+"\nItem Price : "+or.Item1.Itemprice);
 
 
 
