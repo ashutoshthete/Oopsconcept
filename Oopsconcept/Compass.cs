@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Oopsconcept
 {
-    class Pen
+    class Pennn
     {
         string penbrand;
         int penprice;
@@ -26,7 +26,7 @@ namespace Oopsconcept
             set { pencolor = value; }
             get { return pencolor; }
         }
-        public Pen(string penbrand, int penprice, string pencolor)
+        public Pennn(string penbrand, int penprice, string pencolor)
         {
             this.penbrand = penbrand;
             this.penprice = penprice;
@@ -41,7 +41,7 @@ namespace Oopsconcept
         string compassbrand;
         int price;
         string ccolor;
-        Pen p;
+        Pennn p;
 
         public string Compassbrand
         {
@@ -58,7 +58,7 @@ namespace Oopsconcept
             set { ccolor = value; }
             get { return ccolor; }
         }
-        Pen P
+        Pennn P
         {
             set { p = value; }
             get { return p; }
@@ -71,7 +71,7 @@ namespace Oopsconcept
             c1.Ccolor = "yellow";
 
             
-            Pen p1 = new Pen("Parker", 463, "black");
+            Pennn p1 = new Pennn("Parker", 463, "black");
             c1.P = p1;
             Console.WriteLine(c1.Compassbrand);
             Console.WriteLine(c1.Price);
