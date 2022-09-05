@@ -6,22 +6,8 @@ namespace Oopsconcept
 {
     class BintoDec
     {
-       /* public int Power(int b, int index)
+       public int Bin(int num)
         {
-            int power = 1;
-            for (int i = 1; i <= index; i++)
-            {
-                power = power * index;
-
-            }
-            return power;
-        }*/
-        static void Main(string[] args)
-        {
-            BintoDec bd = new BintoDec();
-            Console.WriteLine("enter binary value : ");
-            int num = int.Parse(Console.ReadLine());
-
             int dnum = 0;
             /*int count = 0;*/
             int basev = 1;
@@ -35,7 +21,18 @@ namespace Oopsconcept
 
 
             }
-            Console.WriteLine("decimal : "+dnum);
+            return dnum;
+        }
+        static void Main(string[] args)
+        {
+            BintoDec bd = new BintoDec();
+            Console.WriteLine("enter binary value : ");
+            int num = int.Parse(Console.ReadLine());
+            int result = bd.Bin(num);
+            Console.WriteLine(result);
+
+           
+           
 
         }
     }

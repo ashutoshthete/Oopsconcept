@@ -8,7 +8,14 @@ namespace Oopsconcept
     {
         long employeeid;
         string employeename;
-        long employeesalary;
+        Department d;
+
+        public Employee(long employeeid,string employeename,Department d)
+        {
+            this.employeeid = employeeid;
+            this.employeename = employeename;
+            this.d = d;
+        }
 
         public long Employeeid
         {
@@ -20,22 +27,33 @@ namespace Oopsconcept
             set { employeename = value; }
             get { return employeename; }
         }
-        public long Employeesalary
+        public Department D
         {
-            set { employeesalary = value; }
-            get { return employeesalary; }
+            set { d = value; }
+            get { return d; }
         }
 
+    }
+    class Department
+    {
+        int depid;
+        string depname;
+        public Department(int depid,string depname)
+        {
+            this.Depid = depid;
+            this.Depname = depname;
+        }
 
+        public int Depid { get => depid; set => depid = value; }
+        public string Depname { get => depname; set => depname = value; }
+    }
+    class TestEmployee
+    {
         static void Main(string[] args)
         {
-            Employee e1 = new Employee();
-            e1.Employeeid = 255980047;
-            e1.Employeename = "Ashutosh Thete";
-            e1.Employeesalary = 49500;
+            Employee emp = new Employee(21202015,"Ashutosh Thete",new Department(25598,"Administration"));
+            Console.WriteLine("Employee Name : " +emp.Employeename+"\nEmployee Id : "+emp.Employeeid+"\nDepartment Id : "+emp.D.Depid+"\nDepartment Name : "+emp.D.Depname);
 
-            Console.WriteLine("Employee ID- "+e1.Employeeid+"\nEmployee Name- "+e1.Employeename+"\nSalary- "+e1.Employeesalary);
         }
-
     }
 }
