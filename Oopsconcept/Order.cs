@@ -134,7 +134,8 @@ namespace Oopsconcept
         {
             Order or = new Order(4521, "12/02/22", new Customer(245, "Ashu", new Address("Kannad","Sambhajinagr",431103)), new Item(255,"Modak",255));
             
-            Console.WriteLine("Order Id : "+or.Orderid+"\nOrder Date : "+or.Orderdate+"\nCustomer Id : "+or.Cust.Custid+"\nCustomer Name : "+or.Cust.Custname
+            
+            Console.WriteLine("Order Id          : "+or.Orderid+"\nOrder Date : "+or.Orderdate+"\nCustomer Id : "+or.Cust.Custid+"\nCustomer Name : "+or.Cust.Custname
                 +"\nCustomer address : "+or.Cust.Address1.Addr1+"\nCustomer City : "+or.Cust.Address1.City+"\nCustomer Pincode : "+or.Cust.Address1.Pincode
                 +"\nItem Id : "+or.Item1.Itemid+"\nItem Name : "+or.Item1.Itemname+"\nItem Price : "+or.Item1.Itemprice);
 
