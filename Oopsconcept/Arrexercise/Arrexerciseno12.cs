@@ -11,17 +11,31 @@ namespace Oopsconcept.Arrexercise
             Console.WriteLine("Enter the size : ");
             int size = int.Parse(Console.ReadLine());
             int[] arr = new int[size];
+            int smallest = int.MaxValue;
             for(int i = 0; i < arr.Length; i++)
             {
                 arr[i] = int.Parse(Console.ReadLine());
-
             }
-            Console.WriteLine("The unique elment are : ");
             for(int i = 0; i < arr.Length; i++)
             {
-                int c = 0;
-               
+                if (arr[i] < smallest)
+                {
+                    smallest=arr[i];
+                }
+
             }
+            Console.WriteLine("Smallest : "+smallest);
+
+            int secondsmallest = int.MaxValue;
+            for(int i = 0; i < arr.Length; i++)
+            {
+                if(arr[i]<secondsmallest && arr[i] > smallest)
+                {
+                    secondsmallest = arr[i];
+                }
+            }
+            Console.WriteLine("second smallest : "+secondsmallest);
+            
         }
     }
 }
