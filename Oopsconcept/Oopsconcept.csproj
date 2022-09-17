@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <StartupObject>Oopsconcept.Arrexercise.Matrix</StartupObject>
+    <StartupObject>Oopsconcept.testemp</StartupObject>
   </PropertyGroup>
 
 </Project>
