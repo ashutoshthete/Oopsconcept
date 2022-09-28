@@ -34,7 +34,7 @@ namespace Oopsconcept
         {
             Console.WriteLine("enter");
             int num = 122345;
-            int d=5;
+            
 
             Console.WriteLine(dig(num));
             
