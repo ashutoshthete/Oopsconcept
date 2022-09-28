@@ -8,7 +8,8 @@ namespace Oopsconcept.StringExercise
     {
         static void Main(string[] args)
         {
-            string str = "my name is ashutosh thete and i am from kannad";
+            Console.WriteLine("Enter the string : ");
+            string str = Console.ReadLine(); 
             string[] arr = str.Split();
             int countword = 0;
             foreach(string sr in arr)

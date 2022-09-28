@@ -14,6 +14,7 @@ namespace Oopsconcept.StringExercise
             {
                 Console.WriteLine(s1[i]);
             }
+            Console.WriteLine(s1.IndexOf('g'));
 
         }
     }
