@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <StartupObject>Oopsconcept.StringExercise.Longestword</StartupObject>
+    <StartupObject>Oopsconcept.Cuckoo__series</StartupObject>
   </PropertyGroup>
 
 </Project>

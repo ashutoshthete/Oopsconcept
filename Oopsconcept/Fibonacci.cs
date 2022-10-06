@@ -24,4 +24,24 @@ namespace Oopsconcept
             }
         }
     }
+    class fibseries
+    {
+        static int fib(int n)
+        {
+            if (n <= 1)
+            {
+                return n;
+            }
+            else
+            {
+                return fib(n - 1) + fib(n - 2);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the nth term");
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine(fib(n));
+        }
+    }
 }
