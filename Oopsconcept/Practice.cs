@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Oopsconcept.StringExercise
+namespace Oopsconcept
 {
-    class StringExercise12
+    class Practice
     {
         static string revwords(string str)
         {
@@ -17,21 +17,17 @@ namespace Oopsconcept.StringExercise
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("enter the string");
+            Console.WriteLine("Enter the string");
             string str = Console.ReadLine();
             string[] arr = str.Split();
-            string resrev = "";
-            Console.WriteLine("\n");
+            string resultrev = "";
             foreach(string revstr in arr)
             {
-                resrev = revwords(revstr);
-                Console.Write(resrev+" ");
+                resultrev = revwords(revstr);
+                Console.WriteLine(resultrev+" ");
             }
             
-           
-            
-            
-           
+
         }
     }
 }
